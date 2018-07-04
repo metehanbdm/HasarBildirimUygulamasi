@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top|center_horizontal"
+        android:src="@drawable/splash" />
+    <EditText
+        android:id="@+id/info_entry_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Açıklamanızı Bu Alana Giriniz"
+        android:layout_above="@id/info_phone_editText"
+        android:inputType="textMultiLine" />
+    <EditText
+        android:id="@+id/info_phone_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tel. Numarası Giriniz"
+        android:inputType="phone"
+        android:layout_above="@id/info_btn"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/info_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="ONAYLA" />
+
+
+</RelativeLayout>
