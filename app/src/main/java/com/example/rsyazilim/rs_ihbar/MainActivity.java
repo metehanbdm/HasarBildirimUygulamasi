@@ -1,21 +1,12 @@
 package com.example.rsyazilim.rs_ihbar;
 
 import android.Manifest;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.media.Image;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.net.Uri;
-import android.os.AsyncTask;
-import android.provider.Telephony;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -25,7 +16,6 @@ import com.example.rsyazilim.rs_ihbar.utils.DatabaseUtils;
 import com.example.rsyazilim.rs_ihbar.utils.GeneralUtils;
 import com.example.rsyazilim.rs_ihbar.utils.MailHelper;
 import com.example.rsyazilim.rs_ihbar.utils.MyGlideEngine;
-import com.google.android.gms.maps.model.LatLng;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -33,26 +23,8 @@ import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import com.zhihu.matisse.Matisse;
 import com.zhihu.matisse.MimeType;
-import com.zhihu.matisse.engine.impl.GlideEngine;
-import com.zhihu.matisse.filter.Filter;
 
-import java.util.Calendar;
 import java.util.List;
-import java.util.Properties;
-
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.activation.FileDataSource;
-import javax.mail.BodyPart;
-import javax.mail.Message;
-import javax.mail.Multipart;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -207,6 +179,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     break;
             }
         }
+
+
 
     private void requestCameraPermission() {
         Dexter.withActivity(this)

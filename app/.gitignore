@@ -1,6 +1,7 @@
 # Built application files
 *.apk
 *.ap_
+com.example.rsyazilim.rs_ihbar.utils.ApiVariables.java
 
 # Files for the ART/Dalvik VM
 *.dex

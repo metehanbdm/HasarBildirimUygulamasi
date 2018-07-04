@@ -1,7 +1,9 @@
 //noinspection GradleCompatible
 apply plugin: 'com.android.application'
 
+
 android {
+
     packagingOptions
             {
                 pickFirst 'META-INF/LICENSE.txt' // picks the JavaMail license file
@@ -15,7 +17,9 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
+
     buildTypes {
         release {
             minifyEnabled false
