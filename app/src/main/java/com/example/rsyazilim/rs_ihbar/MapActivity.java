@@ -55,6 +55,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap)
     {
         this.googleMap = googleMap;
+
         requestLocationPermission();
 
     }
